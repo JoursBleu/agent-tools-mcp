@@ -6,7 +6,7 @@
 
 Discover and call **x402 paid services** from any MCP-compatible agent (Claude, Cursor, Cline, Continue, …).
 
-Backed by [agent-tools.cloud](https://agent-tools.cloud), an open directory of 400+ x402 paid APIs (`awesome-x402`, `x402.org/ecosystem`, …).
+Backed by [agent-tools.cloud](https://agent-tools.cloud), an open directory of **2,000+ x402 paid APIs** (`awesome-x402`, `x402scan`, `x402.org/ecosystem`, …). Call the `stats` tool for live counts.
 
 ## Tools
 
@@ -42,12 +42,12 @@ Add to your MCP config (`~/.config/Claude/claude_desktop_config.json`, `~/.curso
 
 ### Remote (no install)
 
-Most clients also accept a `url`-based remote MCP server:
+Most clients also accept a `url`-based remote MCP server (Streamable HTTP; the client must send `Accept: application/json, text/event-stream`):
 
 ```json
 {
   "mcpServers": {
-    "agent-tools": { "url": "https://agent-tools.cloud/mcp/v2" }
+    "agent-tools": { "url": "https://agent-tools.cloud/mcp-discovery/" }
   }
 }
 ```

@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.JoursBleu/agent-tools-mcp",
   "title": "agent-tools (x402 directory)",
-  "description": "Discover and call x402 paid services across the x402 ecosystem — search by intent, filter by price/chain. Live counts via `stats`.",
+  "description": "Discover and call x402 paid services — search by intent, filter by price/chain.",
   "repository": {
     "url": "https://github.com/JoursBleu/agent-tools-mcp",
     "source": "github"
