@@ -86,3 +86,5 @@ Apache-2.0. See [LICENSE](LICENSE).
 - Directory site: <https://agent-tools.cloud>
 - x402 spec: <https://x402.org>
 - MCP spec: <https://modelcontextprotocol.io>
+
+<!-- mcp-name: io.github.JoursBleu/agent-tools-mcp -->

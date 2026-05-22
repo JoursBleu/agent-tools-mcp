@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.JoursBleu/agent-tools-mcp",
+  "title": "agent-tools (x402 directory)",
+  "description": "Discover and inspect x402 paid services. Search 470+ APIs by natural-language intent, fetch call details (URL, price, schema), browse categories. Backed by agent-tools.cloud — free.",
+  "repository": {
+    "url": "https://github.com/JoursBleu/agent-tools-mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "websiteUrl": "https://agent-tools.cloud",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "agent-tools-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agent-tools.cloud/mcp-discovery/"
+    }
+  ]
+}
