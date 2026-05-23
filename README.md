@@ -17,6 +17,44 @@ Backed by [agent-tools.cloud](https://agent-tools.cloud), an open directory of *
 | `list_categories()` | Browse categories |
 | `stats()` | Directory size & health snapshot |
 
+## What agents get back
+
+`search()` and `get()` return a normalised service record. For services hosted
+directly on **agent-tools.cloud**, every paid endpoint advertises the full x402 v2
+`extensions.bazaar` block in its 402 challenge — including JSON Schema and a worked
+request body example — so the agent can call without trial-and-error:
+
+```jsonc
+// shape of get("agent-tools-cloud-signal-token")
+{
+  "slug": "agent-tools-cloud-signal-token",
+  "endpoint": "https://agent-tools.cloud/v1/signal/token",
+  "method": "POST",
+  "price_usd": 0.01,
+  "network": "base-mainnet",
+  "asset": "USDC",
+  "bazaar": {
+    "info": {
+      "input":  { "type": "http", "method": "POST", "bodyType": "json",
+                  "body":   { "chain": "base", "token": "0x4200...0006" } },
+      "output": { "type": "json",
+                  "example": { "signal": "buy", "score": 0.78, "confidence": 0.62 } }
+    },
+    "schema": { "type": "object", "properties": { "body": { "properties":
+                  { "chain": {"type":"string","enum":["base","ethereum","solana"]},
+                    "token": {"type":"string"} },
+                  "required": ["chain", "token"] } } }
+  }
+}
+```
+
+The response also passes through `payment-required` (challenge) and `payment-response`
+headers, both exposed via `Access-Control-Expose-Headers` so a browser-side
+`fetch()` (e.g. `x402-fetch`) can read them.
+
+Third-party entries scraped from `awesome-x402` / `x402scan` / `x402.org` are
+passed through as-is and may or may not include bazaar metadata.
+
 ## Quick Start
 
 ### Claude Code CLI
