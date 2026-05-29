@@ -1,10 +1,13 @@
 # agent-tools-mcp
 
+[![smithery badge](https://smithery.ai/badge/kangletian/agent-tools-x402-directory)](https://smithery.ai/servers/kangletian/agent-tools-x402-directory)
 [![MCP](https://img.shields.io/badge/MCP-Server-blue)](https://modelcontextprotocol.io)
 [![PyPI](https://img.shields.io/pypi/v/agent-tools-mcp)](https://pypi.org/project/agent-tools-mcp/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Discover and call **x402 paid services** from any MCP-compatible agent (Claude, Cursor, Cline, Continue, …).
+
+Also listed on [Smithery](https://smithery.ai/servers/kangletian/agent-tools-x402-directory) for one-click hosted install.
 
 Backed by [agent-tools.cloud](https://agent-tools.cloud), an open directory of **2,000+ x402 paid APIs** (`awesome-x402`, `x402scan`, `x402.org/ecosystem`, …). Call the `stats` tool for live counts.
 
